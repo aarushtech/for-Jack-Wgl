@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Signup </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="flexbox">
+    <div class="form-control">
+      <form action="signup.html" method="post"><br><br><br><br>
+        <div class="first">
+          <h2>Sign Up</h2>
+          <p>It's quick and easy.</p>
+          <hr>
+        </div>
+        <input type="email" name="email" placeholder="Email" pattern=".+@gmail.com" size="30" required><br>
+        <input type="text" name="text" placeholder="Full name" required><br>
+        <input type="text" name="username" placeholder="Username" required><br>
+        <div class="container">
+        <input type="password" name="password" id="password" placeholder="Enter the password"
+          pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" 
+          title="Note : a password must be eight characters including one uppercase letter, one special character and alphanumeric characters"
+          required><i class="far fa-eye" id="togglePassword"></i>
+        </div>
+          <br>
+        <input type="checkbox" name="remember">
+        <label for="remember" id="remem">Accept terms/Rules</label>
+        <a href="index.html"> Have an Account? <span style="color: blue">login</span> </a><br>
+        <input type="submit" value="Sign Up">
+      </form>
+      <p style="color: rgb(153, 153, 153);">By signing up, you agree to our Terms , Data Policy and Cookies Policy .</p>
+
+    </div>
+  </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
